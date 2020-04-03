@@ -1,6 +1,6 @@
 const type = document.getElementsByClassName("typeinput");
 
-const letters =
+const letters = 
 {
     'a': '.-',
     'b': '-...',
@@ -59,10 +59,7 @@ const letters =
     ' ': ' '
 }
 const convert = (letter) => Object.values(letters).find((value) => value === letters[letter]);
-// const word = "ibrahim";
-// const arrayWord = word.split(""); 
-// const arrayMorse = arrayWord.map((letter) => convert(letter));
-// const morse = arrayMorse.join("");
+
 
 const mapToMorseCode = () => {
    const userInput = type[0].value;
