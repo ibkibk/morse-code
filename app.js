@@ -62,7 +62,7 @@ const convert = (letter) => Object.values(letters).find((value) => value === let
 
 
 const mapToMorseCode = () => {
-   const userInput = type[0].value;
+   const userInput = type[0].value.toLowerCase();
    const letterArray= userInput.split("");
    const convertedLetterArray = letterArray.map(convert);
    const resulted = convertedLetterArray.join("");
